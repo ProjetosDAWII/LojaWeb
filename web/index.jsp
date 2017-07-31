@@ -3,7 +3,11 @@
     Created on : 30/07/2017, 20:44:06
     Author     : tatuapu
 --%>
-   
+<%
+    String title= getServletContext().getServletContextName();
+    String dirStyle = getServletContext().getInitParameter("dirStyle");
+    String estiloPrincipal = getServletContext().getInitParameter("estiloPrincipal");
+%> 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
